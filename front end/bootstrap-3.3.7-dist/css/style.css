@@ -1,0 +1,67 @@
+body{
+	background: grey;
+}
+h1{
+	color:blue;
+}
+.right-section{
+	background-color: red; color:#ff2; padding:20px;
+}
+.left-section{
+	background-color:green; color:#fff; padding:13px;
+}
+/*//@media (max-width: @screen-xs-max) { ... 
+h1{
+	font-size: 28px;
+	}
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+ {
+	font-size: 28px;
+	}}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+{
+	font-size: 28px;
+	}}
+@media (min-width: @screen-lg-min) { 
+ {
+	font-size: 28px;
+	}}*/
+	/*Mobile portrait*/
+ @media (max-width: 480px) { }
+  
+/*mobile landscape*/
+@media (min-width: 481px) and (max-width: 599px) {
+	font-size:28px;
+ }
+
+ 
+/*/ * small tablet portrait*/*/
+@media (min-width: 600px) and (max-width: 767px) {
+	font-size:48px;
+}
+
+  
+/*small tablet landscape*/
+@media (min-width: 768px) and (max-width: 959px) { 
+font-size:42px;
+}
+ 
+/*Tablet landscape (1024x768)*/
+
+@media (min-width: 960px) and (max-width: 1199px) { 
+font-size:18px;
+}
+form.email-form{
+	font-style: tahoma;
+	background: black;
+	color:purple;
+	padding:10px;
+	border:2px solid black;
+	margin-top: 15px;
+}
+
+.navbar-default {
+    background-color: black;
+    color:purple;
+    border-color: #e7e7e7;
