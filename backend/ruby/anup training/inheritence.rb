@@ -1,18 +1,17 @@
 class Mammal  # camel case
 	def breathe
-		puts "we breathe"
+		puts "inhale and exhale"
 	end
 end
 
-class Cat < Mammal
-	def meow
+class Whale < Mammal
+	def big
 		puts "we make sound"
 	end
 end
 
-object=Cat.new
-object.breathe
-object.meow
 object1=Mammal.new
 object1.breathe
-
+object=Whale.new
+object.breathe
+object.big
