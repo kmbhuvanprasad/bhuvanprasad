@@ -1,7 +1,6 @@
 class Parent
 	def method_a
 		puts"it is a public method"
-		
 	end
 
 	protected
@@ -17,25 +16,24 @@ end
 	
 	class Child < Parent
 		def access_private_method
-			# c1=Child.new
-			 method_b
+			c1=Child.new
+			c1.method_b
 		end
 		def access_protected_method
-			# c2=Child.new
-			method_b
-			method_c
-		 end
+			c2=Child.new
+			c2.method_c
+		end
 	end
 	
 
 # p=Parent.new
 # p.method_a
-# # p.method_c
-# # p.method_b
+# p.method_c
+# p.method_b
 
 c=Child.new
- c.access_protected_method
-# c.access_private_method
-c.method_a
+# c.access_protected_method
+c.access_private_method
+# c.method_a
 # c.method_b
 # c.method_c
