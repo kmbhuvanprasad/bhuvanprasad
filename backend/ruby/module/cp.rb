@@ -2,19 +2,21 @@ module Car
 	CAR_CAN_GO_FAST=true
 	CAR_CANNOT_FLY=true
 
-	def fast(fast)
+	def Car.fast(fast)
 		@fast=fast
 		puts"#{@fast} car can go fast"
 	end
 
-	def fly(fly)
+	def Car.fly(fly)
 		@fly=fly
 		puts"#{@fly} car cant fly"
 	end
 end
 
 class Vehicle
-	include Car
+ include Car
+	# extend Car
 end
 vehicle=Vehicle.new
-vehicle.fast("")
+Car.fast('1')
+Car.fly('2')

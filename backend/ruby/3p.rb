@@ -32,8 +32,12 @@ end
 # p.method_b
 
 c=Child.new
-# c.access_protected_method
-c.access_private_method
-# c.method_a
-# c.method_b
-# c.method_c
+ c.access_protected_method
+# c.access_private_method
+ #c.method_a
+ #c.method_b
+ #c.method_c
+
+ # public-can be accesed by any1
+ # private- can be only accesed if its called in public method
+ # protected-can be called if its called in public method and if its called in object of child class

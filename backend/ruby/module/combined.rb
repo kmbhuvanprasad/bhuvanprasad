@@ -23,15 +23,21 @@ module Plane
 		@pilot=pilot
 		puts"#{@pilot} plane has pilot"
 	end
+
+		def name(name)
+			puts " #{name}***************indian brand****************"
+		end
 end
 
 class Vehicle
-	include Car
-	include Plane
-	extend Plane
+
+	  include Car   # include is used to add methods to instance of class
+	  include Plane
+	  extend Plane    # extend is used to add class methods
 end
-vehicle=Vehicle.new  # obj=class_name.new
-vehicle.fast("")     #obj.method_name
-vehicle.fly("")
-vehicle.pilot("")
-Vehicle.pilot("")    #class_name.method_name(method can be defined anywhere, not only in class)
+ vehicle=Vehicle.new  # obj=class_name.new
+ vehicle.fast("v.fast")     #include method  
+ # plane.fly("flying")
+ vehicle.pilot("im pilot")  #include method    
+ # Plane.fly("vilan") #this wont display output, cz object.module_name.method_name
+ Vehicle.name("tata") #extend method
