@@ -14,6 +14,9 @@ header,section, nav,aside,article,footer{
 body{
 	text-align:center;
 }
+a.hover{
+	color:red;
+}
 #big{
 	border:1px solid black;
 	width:1000px;
@@ -52,15 +55,7 @@ P[name=""] {color:blue;}
 margin top:2px;	
 margin left:5px;
 }
-#aside{
-	float: right;
-	width: 240px;
-	margin top: 20px;
-	margin-right: 45px;
-	padding: 10px;
-	background: lightgreen;
-	border: 2px solid black;
-}
+
 #foot{
 	clear:both;
 	font: bold tahoma;

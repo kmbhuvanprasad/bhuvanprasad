@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="00.css">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">GANGOUT</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> About</a></li>
+            <li><a class="signup1" href="#" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="imgs">
+     <h2> Mysore web apps engg </h2> 
+    </div>
+
+
+    <div class="container11">
+      <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email-addres" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+    </div> 
+
+    <div class="container1">
+    <div class="row">
+        <div class="col-sm-4" style="background-color:lavender">
+          <h3>event 1</h3>
+          <p> Event on Ajax</p>
+        </div>
+
+        <div class="col-sm-4" style="background-color:lavender">
+          <h3>event 2</h3>
+          <p> Event on Ruby Rails</p>
+        </div>
+
+        <div class="col-sm-4" style="background-color:lavender">
+          <h3>event 3</h3>        
+         <p> Python for every one</p>
+        </div>
+    </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $(".signup1").click(function(){
+              $(".container11").hide();
+           });
+            $(".signup1").click(function(){
+              $(".container1").hide();
+          });
+             $(".signup1").click(function(){
+              $(".imgs").hide();
+          });
+            });
+  </script>
+    <p> para 1</p>
+  </body>
+
+</html>

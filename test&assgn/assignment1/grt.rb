@@ -12,5 +12,5 @@ end
 num3=gets.to_s
 num4=gets.to_s
 grt=Grt.new
-grt.checkNums(num3,num4)
-	   
+res=grt.checkNums(num3,num4)
+puts res  

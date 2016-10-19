@@ -1,0 +1,7 @@
+def CheckSpace(ste)
+	string = ste.split(' ')
+	cin=string.count
+	puts string
+	puts cin
+end
+CheckSpace("this is my child")
