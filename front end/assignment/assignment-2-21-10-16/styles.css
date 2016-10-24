@@ -1,0 +1,51 @@
+/*css specifies the way the content to be specified*/
+/*css is set of instructions that also helps to modify how some part of document that is to be displayed*/*/
+body{
+	background: black;
+	color:white;
+}
+a{
+	color:gray;
+}
+.greenlink:hover{
+	background: black;
+	color:white;
+}
+/* there are 3 types of fonts in web browser
+Sans-serif- modern day fonts
+Serif-widely used in books
+Monospaced- it fits in perfect colomns,used for codes
+*/
+h1{
+	font-family: serif;  
+}
+a:hover{
+	color:black;
+	background: white;
+	text-decoration: none;
+}
+/* creating layout with help of class
+we .indent in css and class="indent" in html
+classes can style any tag*/
+.indent{
+	margin-left: 10px; 
+}
+/*by specifying span class ="class_name" we can make first line in a paragraph to indent but not entire paragraph*/
+
+/*media queries*/
+
+
+/*@media(min-width: 1000px){
+	body{
+		background: yellow;
+	}
+}
+@media(min-width: 500px){
+	body{
+		background:red;
+	}
+}*/
+
+
+/*bootstrap neutralizes design */
+/*div tag defines areas of page for styling
