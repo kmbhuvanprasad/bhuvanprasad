@@ -8,24 +8,17 @@
   height:50%;
 }
 
-
 @media (min-width: 1200px) {
 }
-
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 }
-
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
 }
-
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
 }
-
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 }
@@ -66,6 +59,17 @@
   width: 100%;
   border-radius: 4px 25px 25px 4px;
 }
+#foot{
+  clear:both;
+  font: bold tahoma;
+  text-align: center;
+  background: black ;
+  color: white;
+  border-top: 2px solid black;
+  font-size: 14px;
+  padding:5px;
+}
+
 .search-form .form-group span.form-control-feedback {
   position: absolute;
   top: -1px;
@@ -80,13 +84,3 @@
   left: initial;
   font-size: 14px;
 
-#foot{
-  clear:both;
-  font: bold tahoma;
-  text-align: center;
-  background: black ;
-  color: white;
-  border-top: 2px solid black;
-  font-size: 14px;
-  padding:5px;
-}
