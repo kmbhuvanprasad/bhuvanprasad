@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="frontend.css">
-  <link rel="stylesheet" type="text/css" href="frontend.js">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -23,7 +22,6 @@
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -34,14 +32,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav nav-tabs nav-justified">
-        <li id="home" class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li id="home" class="active"><a href="">Home<span class="sr-only">(current)</span></a></li>
         <li id="show"><a href="#">About</a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  Products   <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Ayurveda</a></li>
-            <li><a href="#">Allopathy</a></li>
-            <li><a href="#">Homeopathy</a></li>
-          </ul>
+      <ul class="dropdown-menu">
+        <li><a href="#">Ayurveda</a></li>
+        <li><a href="#">Allopathy</a></li>
+        <li><a href="#">Homeopathy</a></li>
+      </ul>
         </li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
@@ -50,7 +48,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container"> <br>
+<div class="container"> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
       <div class="item active">
@@ -83,11 +81,7 @@
     <button type="button" class="btn btn-primary" data-slide-to="0" data-target="#myCarousel">1</button>
     <button type="button" class="btn btn-primary" data-slide-to="1" data-target="#myCarousel">2</button>
     <button type="button" class="btn btn-primary" data-slide-to="2" data-target="#myCarousel">3</button>
-    <!-- <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="sr-only">Next</span> -->
-    <button type="button" class="btn btn-primary" data-slide="next" data-target="#myCarousel">Next</button>
-     <!-- </a>  -->
-    </div>
+    <button type="button" class="btn btn-primary" data-slide="next" data-target="#myCarousel">Next</button></div>
 </div>
 </div>
 </center>
@@ -176,6 +170,20 @@ Now, for prescribed tests, you don’t need to wait for hours in physical labora
   </div>
 </div>
 
+
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p><a class="btn btn-primary btn-default" href="#" role="button">more</a></p>
+</div>
+
+<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-menu-up" aria-hidden="right true"></span></a></p>
+<p id="more" class="pull-right"><a href="#"><span>more</span></a></p>
+
+ <footer id="foot">       
+  <p>&copy;  All copyrights &copy reserved by 5-mg 2016, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  <p>Contact 1800-235-1800 (Toll-free) </p>
+ </footer>
+<script type="text/javascript" src="frontend.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
 $("#body").hide();
@@ -200,6 +208,7 @@ $(document).ready(function(){
         $(".row2").hide();
         $("#content").hide();
         $(".jumbotron").hide();
+         $(".btn-group").hide();
         $("#body").show();
     });
  });
@@ -212,6 +221,7 @@ $(document).ready(function(){
         $(".row2").hide();
         $("#content").hide();
         $(".jumbotron").hide();
+        $(".btn-group").hide();
         $("#body").show();
     });
  });
@@ -241,15 +251,5 @@ $(document).ready(function(){
   });
 
 </script>
-<div class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p><a class="btn btn-primary btn-default" href="#" role="button">more</a></p>
-</div>
-
-<p class="pull-right"><a href="#"><span class="glyphicon glyphicon-menu-up" aria-hidden="right true"></span></a></p>
-<p id="more" class="pull-right"><a href="#"><span>more</span></a></p>
-
- <footer id="foot">       
-  <p>&copy;  All copyrights &copy reserved by 5-mg 2016, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  <p>Contact 1800-235-1800 (Toll-free) <p>
- </footer>
+ </body>
+ </html>
