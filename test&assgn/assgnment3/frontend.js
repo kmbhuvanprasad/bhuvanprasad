@@ -1,3 +1,7 @@
+// $('.carousel').carousel({
+// 	interval:15000;
+// })
+
 // $(document).ready(function(){
 //      $(window).scroll(function () {
 //             if ($(this).scrollTop() > 50) {
@@ -18,11 +22,9 @@
 //         $('#back-to-top').tooltip('show');
 
 // });
-
-
-
-
-
-$('.carousel').carousel({
-	interval:15000;
-})
+$(".glyphicon-chevron-up").click(function() {
+	debugger;
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  debugger;
+  return false;
+});
