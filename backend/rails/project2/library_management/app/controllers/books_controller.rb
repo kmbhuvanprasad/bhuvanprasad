@@ -13,9 +13,26 @@ class BooksController < ApplicationController
 		@books=Book.all
 	end
 
-	def edit
-		@book=Book.find_by_id(params[:id])
-	end
+# 	def edit
+# 		@book=Book.find_by_id(params[:id])
+# 	end
+
+# 	def update
+# 		# binding.pry
+# 		@book=Book.find_by_id(params[:id])
+# 		@book.update_attributes(book_params)
+# 		redirect_to books_index_path
+# 	end
+
+# 	def destroy
+# 		@book=Book.find_by_id(params[:id])
+# 		@book.destroy
+# 		redirect_to books_index_path
+# 	end
+
+# 	def show
+# 		@book=Book.find(params[:id])
+# 	end
 
 	private
 	 def book_params

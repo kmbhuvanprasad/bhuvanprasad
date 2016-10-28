@@ -11,6 +11,12 @@ Rails.application.routes.draw do
    get "/books/list" => "books#index",as: :books_index
 
    get "/book/:id/edit" =>"books#edit", as: :book_edit
+
+   put "/book/:id/edit" => "books#update", as: :book_update
+
+   delete "book/:id" => "books#destroy", as: :book_destroy
+
+   get "book/:id/show" => "books#show", as: :book_show
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
