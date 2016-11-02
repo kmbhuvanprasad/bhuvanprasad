@@ -1,0 +1,274 @@
+.carousel-inner > .item > img {
+    position: relative;
+  margin:auto;
+}
+.imgmain{
+  height:50%;
+}
+
+.mdart1{
+  font-style: normal;
+  font:arial, sans-serif;
+}
+.mdart2{
+  font-style: italic;
+  font:Georgia, serif;
+}
+.mdart3{
+  font-style: oblique;
+  font: Times, serif;
+}
+#tag{
+  font:arial, sans-serif;
+  font-style: italic;
+  }
+.h2homeo{
+  color:black;
+}
+.h2ayur{
+  color:black;
+}
+.h2allo{
+  color:black;
+}
+.text1{
+  color:black;
+}
+.text2{
+  color:black;
+}
+.text3{
+  color:black;
+}
+.mySlides {display:none}
+ .search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+   Firefox 18- 
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+ display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+
+#foot{
+  clear:both;
+  font: bold tahoma;
+  text-align: center;
+  background: black ;
+  color: white;
+  border-top: 2px solid black;
+  font-size: 14px;
+  padding:15px;
+}
+
+.h1tag{
+  padding-left: 100px;
+}
+.footerpara{
+  font:tahoma;
+  color:orange;
+  font-size: 12px;
+}
+
+.text1{
+  font-size: 14px;
+  padding: 5px;
+   /*padding-left: 5px;*/
+     text-align: justify;
+}
+.aboutpara{
+  text-align: justify;
+}
+/*#paralast{
+  float: left;
+}*/
+
+/* Portrait phones and smaller */
+@media ( min-width:321px ) and (max-width: 425px) {
+ .fimg{
+  height: 45px;
+  width:35px;
+ }
+ .timg{
+  height: 45px;
+  width:35px;
+ }
+ .iimg{
+  height: 45px;
+  width:40px;
+ }
+ .title_style{
+   font-size: 38px;
+ }
+ #paralast
+{
+  width: 100%;
+ padding-right: 18px;
+ padding-left:18px;
+}
+.text1{
+  font-size: 12px;
+  padding: 18px;
+  text-align: justify;
+}
+.caption{
+  text-align: justify;
+}
+}
+@media (max-width: 320px) {
+ .fimg{
+  height: 45px;
+  width:35px;
+ }
+ .title_style{
+  font-size: 15%;
+ }
+ .timg{
+  height: 45px;
+  width:35px;
+ }
+ .iimg{
+  height: 45px;
+  width:40px;
+ }
+ .title_style{
+   font-size: 31px;
+ }
+  .himg{
+  height: 175px;
+  width:235px;
+ }
+ .aimg{
+  height: 145px;
+  width:200px;
+ }
+ .alimg{
+  height: 120px;
+  width:190px;
+ }
+
+#paralast
+{
+ width: 301px;
+ height: 200px;
+ padding-left:18px;
+}
+.text1{
+  font-size: 12px;
+  padding: 15px;
+  text-align: justify;
+}
+.caption{
+  text-align: justify;
+}
+}
+/* Landscape phones and portrait tablets 
+@media (max-width: 767px) {
+/*#paralast{
+  float: left;
+}
+ }
+*/
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+#paralast{
+  float: left;
+  width: 300px;
+  height: 263px;
+  padding: 10px;
+}
+.text1{
+  font-size: 12px;
+  padding: 15px;
+  text-align: justify;
+}
+.caption{
+  text-align: justify;
+}
+}
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+ #paralast{
+  float: left;
+   width: 370px;
+  height: 295px;
+  padding: 10px;
+}
+.text1{
+  font-size: 14px;
+  padding: 15px;
+  text-align: justify;
+}
+.caption{
+  text-align: justify;
+}
+
+}
+@media (min-width: 1200px) {
+
+ #paralast{
+  float: left;
+  padding: 15px;
+}
+.text1{
+  font-size: 14px;
+  padding: 15px;
+  text-align: justify;
+}
+.caption{
+  text-align: justify;
+}
+}
