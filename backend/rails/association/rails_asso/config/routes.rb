@@ -4,7 +4,11 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  resources :companies do
+  resources :employees
+  end
 
+  # get "companies"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -13,20 +17,13 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  post "api/v1/create_student" => "api/v1/students#create"
 
-  put "api/v1/update_student/:id" => "api/v1/students#update"
-
-  delete "api/v1/delete_student/:id" => "api/v1/students#destroy"
-
-  get "api/v1/index_student" => "api/v1/students#index"
   # Example resource route with options:
   #   resources :products do
   #     member do
   #       get 'short'
   #       post 'toggle'
   #     end
-  
   #
   #     collection do
   #       get 'sold'
