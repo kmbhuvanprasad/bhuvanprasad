@@ -1,3 +1,7 @@
+#border{
+  border-style: groove;
+  padding: 5px;
+}
 .imgmain{
   height:50%;
 }

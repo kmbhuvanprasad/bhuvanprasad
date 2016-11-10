@@ -1,0 +1,15 @@
+<br><br><br><br><table>
+<tr>
+	<th>username</th>
+	<!-- <th>password</th> -->
+</tr>
+
+<% @account.each do |b|%>
+<tr>
+<td><%= b.username %></td>
+<!-- <td><%= b.password %></td> -->
+<td><%= link_to "Edit", account_edit_path(b)%></td>
+<td><%= link_to "Destroy" ,account_destroy_path(b),method: :delete, data: {confirm:'are you sure?'} %></td>
+</tr>
+<%end%>
+</table>

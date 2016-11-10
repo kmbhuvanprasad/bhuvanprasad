@@ -4,6 +4,7 @@ class BooksController < ApplicationController
 	end
 
 	def create
+		binding.pry
 		@book=Book.new(book_params)
 		@book.save
 		redirect_to books_index_path

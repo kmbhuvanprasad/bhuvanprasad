@@ -1,0 +1,15 @@
+<br> <br> <br><%= form_for :account, url: account_edit_path(@account), method: :put do |f| %>
+<p>
+	<%= f.label :user_name %><br>
+	<%= f.text_field :username %>
+</p>
+
+<p>
+	<%= f.label :password %><br>
+	<%= f.password_field :password %> 
+</p>
+
+<p>
+	<%= f.submit%>
+</p>
+<% end %>

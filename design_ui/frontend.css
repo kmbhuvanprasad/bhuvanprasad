@@ -1,18 +1,27 @@
-
-.mdart1{
+#border{
+  border-style: groove;
+  padding: 5px;
+}
+.fimg{
+padding: 5px;  
+}
+.timg{
+padding: 5px;  
+}
+  .mdart1{
   font-style: normal;
   font:arial, sans-serif;
-  color: white;
+  color: black;
 }
 .mdart2{
   font-style: italic;
   font:Georgia, serif;
-  color: white;
+  color: black;
 }
 .mdart3{
   font-style: oblique;
   font: Times, serif;
-  color: white;
+  color: black;
 }
 #tag{
   font:arial, sans-serif;
@@ -60,9 +69,6 @@
     left: 500px;
     z-index: 50;
 }
-
-
-
 .back-to-top {
     cursor: pointer;
     position: fixed;
@@ -82,8 +88,7 @@
   padding:15px;
 }
 #mart{
-  background-color: black;
-  color: white;
+  color: black;
 }
 .h1tag{
   padding-left: 100px;
@@ -93,21 +98,14 @@
   color:green;
   font-size: 16px;
 }
-
 .text1{
   font-size: 14px;
   padding: 5px;
-   /*padding-left: 5px;*/
-     text-align: justify;
+  text-align: justify;
 }
 .aboutpara{
   text-align: justify;
 }
-/*#paralast{
-  float: left;
-}*/
-
-/* Portrait phones and smaller */
 @media ( min-width:321px ) and (max-width: 425px) {
  .fimg{
   height: 45px;
@@ -270,15 +268,6 @@
 }
 
 }
-/* Landscape phones and portrait tablets 
-@media (max-width: 767px) {
-/*#paralast{
-  float: left;
-}
- }
-*/
-
-/* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 #paralast{
   float: left;
@@ -345,11 +334,6 @@
    height:60px;
 }
 }
-  /*.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      margin: auto;
-  }*/
-
   .container {
     margin-top: 20px;
 }
@@ -360,14 +344,14 @@
 }
 
 .carousel-inner img {
-    width: 100%;
+    width: 98.5%;
+    padding-left: 15px;
     max-height: 460px
 }
 
 .carousel-control {
     width: 0;
 }
-
 .carousel-control.left,
 .carousel-control.right {
   opacity: 1;
@@ -394,33 +378,27 @@
   z-index: 5;
   display: inline-block;
 }
-
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
   left: 0;
 }
-
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next {
   right: 0;
 }
-
 .carousel-control.left span,
 .carousel-control.right span {
   background-color: #000;
 }
-
 .carousel-control.left span:hover,
 .carousel-control.right span:hover {
   opacity: .7;
   filter: alpha(opacity=70);
 }
-
 .navbar-brand {
     float: left;
     height: 50px;
     padding: 5px;
     font-size: 18px;
     line-height: 16px;
-
 }

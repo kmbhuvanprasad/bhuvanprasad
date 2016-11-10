@@ -4,6 +4,7 @@ class CompaniesController < ApplicationController
 	end
 
 	def create
+		binding.pry
 		@company=Company.new(company_params)
 		@company.save
 		redirect_to new_company_path
