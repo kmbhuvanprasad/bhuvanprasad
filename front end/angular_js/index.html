@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="directoryApp">
+<head>
+	<title>Angular js</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<style>
+		.over-fifty{
+			color:red;
+			background-color: black;
+		}
+		.under-fifty{
+			color:white;
+			background-color: black;
+		}
+	</style>
+</head>
+<!-- <body style="background-color:{{ bgclr }}"> -->
+<!-- <body ng-init="item=['one','two','three','four']">1 -->
+<!-- <body ng-init="items={'one':'bhuvan','two':'milan','three':'akshay','four':'suhas'}">2 -->
+<!-- <body ng-init="company=[{name:'Qwinix',distance:'9km'},{name:'Infosys',distance:'8km'},{name:'Wipro',distance:'8.5km'}]"> 3-->
+<body ng-controller="directoryController as dirlist">
+City:  <input type="textbox" name="input" id="txt1"><br><hr>
+Name:<input type="textbox" name="input" ng-model="dirlist.name1"><hr>
+<p>{{ name1 }}</p>
+
+<p id="inp1"></p><br>
+<input type="textbox" ng-model="dirlist.bgclr"><br><hr>
+<input type="textbox" placeholder="search" ng-model="dirlist.search"><hr>
+<!-- <ul>1
+	<li ng-repeat="list in item">{{list}}</li> {{}}=binding expression
+</ul> -->
+
+<!-- <ul>2
+	<li ng-repeat="(x,y) in items"> {{x}} {{y}} </li>
+</ul> -->
+<!-- <ul>
+	<li ng-repeat="a in company"><strong>{{a.name}}</strong> - <i>{{a.distance}}</i></li>
+</ul> -->
+
+<!-- <ul>
+	<li ng-repeat="list in company | filter:search "> {{list.name}}{{list.distance}}</li>
+</ul> -->
+
+<!-- <ul> <u>Through controller</u>
+	<li ng-repeat="list in dirlist.company | orderBy:'-age' | limitTo:2  "> {{list.name|uppercase}} - {{list.age|currency:'&#8377':0}}</li><hr>
+</ul> -->
+
+<ul><u>Through controller</u>
+	<li ng-repeat="list in dirlist.company | limitTo:8 " ng-class="list.age<50? 'over-fifty':'under-fifty'"> {{list.name|uppercase}} - {{list.age|currency:'&#8377':0}}</li><hr>
+</ul>
+
+ <button ng-click="dirlist.showfunc()">show</button><br>
+<!-- 
+<button ng-click="dirlist.capture('danger')"> submit</button><br> -->
+<form ng-submit="dirlist.entity()">
+	<input type="textbox" placeholder="enter your name" ng-model="dirlist.name">
+	<input type="number" placeholder="enter your age" ng-model="dirlist.age">
+	<input type="submit" value="submit">
+</form>
+
+<script type="text/javascript" src=directory.js></script>
+</body>
+</html>
