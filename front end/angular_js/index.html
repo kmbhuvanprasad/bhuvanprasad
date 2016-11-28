@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html ng-app="directoryApp">
 <head>
-	<title>Angular js</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	<script	src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<title>Angular js</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
 	<style>
 		.over-fifty{
 			color:red;
@@ -13,6 +14,41 @@
 			color:white;
 			background-color: black;
 		}
+		ul{
+			list-style: none;
+		}
+		li{
+			display: flex;
+		}
+		li span{
+			display: inline-block;
+			line-height: 50px;
+		}
+		li img{
+			height: 50px;
+			width: 50px;
+			margin-left: 30px;
+			border-radius: 50px;
+		}
+	  ul.ng-enter {
+        transition:0.3s ease all;
+        opacity:0;
+        transform:translateX(-100%);
+    }
+    ul.ng-enter.ng-enter-active {
+        opacity:1;
+        transform:translateX(0);
+    }
+    ul.ng-leave {
+        transition:0.3s ease all;
+        opacity:1;
+        transform:translateX(0);    
+    }
+    ul.ng-leave.ng-leave-active {
+        opacity:0;
+        transform:translateX(-100%);
+    }
+
 	</style>
 </head>
 <!-- <body style="background-color:{{ bgclr }}"> -->
@@ -42,15 +78,27 @@ Name:<input type="textbox" name="input" ng-model="dirlist.name1"><hr>
 	<li ng-repeat="list in company | filter:search "> {{list.name}}{{list.distance}}</li>
 </ul> -->
 
-<!-- <ul> <u>Through controller</u>
-	<li ng-repeat="list in dirlist.company | orderBy:'-age' | limitTo:2  "> {{list.name|uppercase}} - {{list.age|currency:'&#8377':0}}</li><hr>
-</ul> -->
+<ul ng-if="dirlist.toggle">
+	<li ng-repeat="list in dirlist.company | orderBy:'-age' | limitTo:90 "> 
+	<span>{{list.name|uppercase}} - {{list.age|currency:'&#8377':0}}</span>
+	<img ng-src="{{list.img}}">
+	</li><hr>
+</ul>
+<button ng-if="!dirlist.toggle" ng-click="dirlist.showfunc()">show</button><br>
+<button ng-if="dirlist.toggle" ng-click="dirlist.showfunc()">hide</button><br>
+ <div ng-if="dirlist.flag">
+ 	<button ng-click="dirlist.next()">next</button>
+ </div>
+ <div ng-if="dirlist.flag1">
+ 	<button ng-click="dirlist.prev()">prev</button>
+ </div>
+<img ng-src="{{dirlist.current.img}}">
 
-<ul><u>Through controller</u>
+<!-- <ul><u>Through controller</u>
 	<li ng-repeat="list in dirlist.company | limitTo:8 " ng-class="list.age<50? 'over-fifty':'under-fifty'"> {{list.name|uppercase}} - {{list.age|currency:'&#8377':0}}</li><hr>
 </ul>
-
- <button ng-click="dirlist.showfunc()">show</button><br>
+ -->
+ <!-- <button ng-if="dirlist.toggle" ng-click="dirlist.showfunc()">show</button><br> -->
 <!-- 
 <button ng-click="dirlist.capture('danger')"> submit</button><br> -->
 <form ng-submit="dirlist.entity()">
